@@ -18,7 +18,7 @@ namespace Polymorphism
             this.Color = Color;
         }
 
-        public virtual void ShowDetails()
+        public void ShowDetails()
         {
             Console.WriteLine("Horse Power: {0}! \nColor: {1}", HP, Color);
         }

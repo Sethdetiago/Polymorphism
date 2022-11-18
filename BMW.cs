@@ -17,16 +17,16 @@ namespace Polymorphism
             Model = model;
         }
 
-        public override void ShowDetails()
+        public new void ShowDetails() //not overriding but creating own version of method.
         {
             Console.WriteLine("This {0}'s Details", Brand); //This can be reused in other Brand subclasses
-            base.ShowDetails();         //Reuse of parents method
+            Console.WriteLine("Horse Power: {0}! \nColor: {1}", HP, Color);
             Console.WriteLine("Model: {0}", Model); //Addition of the Model to the method
         }
 
         public override void Repair()
         {
-            Console.WriteLine("Message from BMW Dealership:");
+            Console.WriteLine("Message from {0} Dealership", Brand);
             base.Repair();  //Using part of parent classes code
         }
     }

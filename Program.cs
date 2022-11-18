@@ -1,18 +1,18 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Polymorphism;
 
-Car car = new Car(400, "Green");
 
-car.ShowDetails();
-car.Repair();
+Audi audi = new Audi(300, "Black", "A4");
 
-Audi myAudi = new Audi(500, "Black", "A4");
+audi.ShowDetails();
+audi.Repair();
 
-myAudi.ShowDetails();
-myAudi.Repair(); //Parent classes method
+//Creating object as a Car will call parent Method fir show detail
+Car audi2 = new Audi(300, "Black", "A4");
 
-BMW myBMW = new BMW(450, "White", "540i");
+audi2.ShowDetails();
+audi2.Repair();
 
-myBMW.ShowDetails();
-myBMW.Repair();
+
+Console.ReadKey();
 
